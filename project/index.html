@@ -85,8 +85,9 @@
     </section>
    
     <section class="create-account-section">
-        <div class="account-wrapper">
-            <div class="container">
+        <div class="container">
+            <!-- здесь был изменен порядок создания контейнеров div, из-за чего не работало перенесение блока form на левую часть страницы -->
+            <div class="account-wrapper">
                 <div class="account-info-wrapper">
                     <h2 class="title">Create your free account</h2>
                     <p class="text">Let us talk about dreams. We all know that dreams do play a role in our daily lives.
@@ -94,18 +95,19 @@
                     solutions to our daily problems and see things from a different perspective.
                     Whenever we are dreaming, we can be who or what we want to be, regardless of 
                     the fact that in real life.</p>
-                    <ul class="list">
-                    <li class="list-advantages"><img src="./assets/images/Check.svg" alt="">Easy setup, fast start</li>
-                    <li class="list-advantages"><img src="./assets/images/Check.svg" alt="">Free forever for core features</li>
-                    <li class="list-advantages"><img src="./assets/images/Check.svg" alt="">14-day trial of premium features</li>
-                    </ul>
+                        <ul class="list">
+                            <li class="list-advantages"><img src="./assets/images/Check.svg" alt="">Easy setup, fast start</li>
+                            <li class="list-advantages"><img src="./assets/images/Check.svg" alt="">Free forever for core features</li>
+                            <li class="list-advantages"><img src="./assets/images/Check.svg" alt="">14-day trial of premium features</li>
+                        </ul>
                 </div>
-                    <form action="about">
-                    <input type="text" placeholder="FullName*">
-                    <div class="fields-wrapper">
-                    <input type="email" placeholder="Email*"> 
-                    <input type="password" placeholder="Your password*">
-                    <input type="date">
+                    <form>
+                        <input type="text" placeholder="FullName*">
+                        <div class="fields-wrapper">
+                            <input type="email" placeholder="Email*"> 
+                            <input type="password" placeholder="Your password*">
+                            <input type="date">
+
                 <select>
                     <option selected disabled>Country</option>
                     <option>Belarus</option>
