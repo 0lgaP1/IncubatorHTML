@@ -136,13 +136,17 @@ button:hover {
     padding: 100px 0;
 }
 
-.rates-section .title: {
+.rates-section .title {
     margin-bottom: 20px;
 }
 
 .rates-section .text {
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+.rates-section .table-title {
+    font-weight: bold;
 }
 
 .rates-wrapper {
@@ -153,6 +157,7 @@ button:hover {
 
 .rates-wrapper .title {
     font-size: 32px;
+    font-weight: bold;
    }
 
 .table {
@@ -245,6 +250,7 @@ th, td {
 
 .account-info-wrapper .title {
     font-size: 32px;
+    font-weight: bold;
 }
 
 input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
@@ -350,17 +356,41 @@ small {
 }
 
 /* ======== Tablet adaptive ======== */
-@media screen and (max-width 1400px) {
+@media screen and (max-width: 1400px) {
     .main-wrapper {
         flex-direction: column;
     }
 
     .main-info {
         align-self: flex-start;
+        margin: 100px 0 80px;
     }
 
     .main-img {
         align-self: center;
     }
-}
 
+.table {
+    width: 940px;
+    }
+
+.table-wrapper {
+    overflow: auto;
+    width: 100%;
+    max-width: 940px;
+    }
+
+.account-wrapper {
+    flex-direction: column;
+    gap: 70px;
+    }
+
+.create-account-section .text {
+    max-width: unset;
+    }
+
+form {
+    align-self: center;
+    }
+
+}
