@@ -3,14 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat+Alternates:wght@700&family=Rubik&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>Awesome markup</title>
 </head>
-<body>
-    <div>
-        <div>
-        </div>
-        <div>правая
-        </div>
-    </div>
-</body>
+    <body>
+        <section>
+                <div class="card">
+                    <div class="product-image-block">
+                        <img class="main-image" src="./images/main-mage.png" alt="">
+                    </div>
+                    <div class="preview" selected>
+                        <img src="./images/preview1.png" alt="">
+                    </div>
+                    <div class="preview">
+                        <img src="./images/preview2.png" alt="">
+                    </div>
+                
+                    <div class="product-info-block">
+                        <h1 class="main-title">Fluted Contrast</h1>
+                            <span class="subtitle">Mug / 33 cl</span>
+                            <p class="text">Fluted Contrast represents the perfect fusion between<br>
+                            the aesthetic and the functional. The design is elegant<br>
+                            and modern, created out of a deep respect for Royal British<br>
+                            history and traditions.</p>
+                        <div class="colors">
+                            <h2 class="subtitle">Color options</h2>
+                                <ul>
+                                    <li> 
+                                        <div class="circle">
+                                            <img src="./images/blue-main.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="circle">
+                                            <img src="./images/yellow.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="circle">
+                                            <img src="./images/red.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="circle">
+                                            <img src="./images/black.png" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="circle">
+                                            <img src="./images/green.png" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div>
+                                    <h2 class="subtitle">QUANTITY</h2>
+                                    <select name="quantity" id="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <h2 class="subtitle">PRICE</h2>
+                                    <span>EUR 39,00</span>
+                                </div>
+                                   <button>Add to basket</button>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
