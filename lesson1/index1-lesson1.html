@@ -13,17 +13,22 @@
 </head>
     <body>
         <section>
-                <div class="card">
-                    <div class="product-image-block">
+            <div class="card">
+                 <div class="product-image-block">
+                    <div class="main-image-wrapper">
                         <img class="main-image" src="./images/main-mage.png" alt="">
                     </div>
-                    <div class="preview" selected>
-                        <img src="./images/preview1.png" alt="">
+
+                    <div class="preview-wrapper">
+                        <div class="preview selected">
+                            <img src="./images/preview1.png" alt="">
+                        </div>
+
+                        <div class="preview">
+                            <img src="./images/preview2.png" alt="">
+                        </div>
                     </div>
-                    <div class="preview">
-                        <img src="./images/preview2.png" alt="">
-                    </div>
-                
+                </div>
                     <div class="product-info-block">
                         <h1 class="main-title">Fluted Contrast</h1>
                             <span class="subtitle">Mug / 33 cl</span>
@@ -32,10 +37,10 @@
                             and modern, created out of a deep respect for Royal British<br>
                             history and traditions.</p>
                         <div class="colors">
-                            <h2 class="subtitle">Color options</h2>
-                                <ul>
+                            <h2 class="subtitle">COLOR OPTIONS</h2>
+                                <ul class="color-items">
                                     <li> 
-                                        <div class="circle">
+                                        <div class="circle selected">
                                             <img src="./images/blue-main.png" alt="">
                                         </div>
                                     </li>
@@ -61,21 +66,23 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div>
-                                <div>
+                            <div class="wrapper">
+                                <div class="quantity-item">
                                     <h2 class="subtitle">QUANTITY</h2>
-                                    <select name="quantity" id="quantity">
+                                    <select class="quantity" name="quantity" id="quantity">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
+                                        <option value="4">4</option>
                                     </select>
                                 </div>
                                 <div>
                                     <h2 class="subtitle">PRICE</h2>
-                                    <span>EUR 39,00</span>
+                                    <span class="price">EUR 39,00</span>
                                 </div>
-                                   <button>Add to basket</button>
-                </div>
+                            </div>     
+                                <button class="button">Add to basket</button>
+                            
             </div>
         </section>
     </body>
